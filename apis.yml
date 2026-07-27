@@ -1,8 +1,25 @@
 aid: groupalia
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/groupalia.png
 name: Groupalia
-description: 'Groupalia is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Groupalia was a Spanish group-buying / daily-deals company (a Groupon-style
+  local commerce marketplace) founded in 2010 and backed by investors including Insight
+  Partners, operating across Spain, Italy and parts of Latin America before consolidating
+  in the group-buying downturn. The brand''s only active surface today is the Italian
+  domain groupalia.it, a gift-card storefront whose checkout is operated by EPIPOLI
+  S.p.A. (mygiftcard.it); the original www.groupalia.com domain no longer resolves.
+  No public API, developer portal, SDKs, or agent-facing surface is published, so this
+  profile remains a consumer-company identity record rather than an API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/groupalia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Daily Deals
+- Group Buying
+- E-commerce
+- Gift Cards
+- Retail
+- Spain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/groupalia-domain-security.yml
 - type: Website
+  url: https://www.groupalia.it/
+- type: WebsiteInactive
   url: http://www.groupalia.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
